@@ -34,21 +34,21 @@
 
   (强烈建议：自行修改本地宿主机端口，即修改左边的5678。)
   
-docker run -dit \
-  -v /mnt/mmcblk2p4/jd/config:/jd/config \
-  -v /mnt/mmcblk2p4/jd/log:/jd/log \
-  -v /mnt/mmcblk2p4/jd/own:/jd/own \
-  -v /mnt/mmcblk2p4/jd/diy:/jd/jbot/diy \
-  -v /mnt/mmcblk2p4/jd/scripts:/jd/scripts \
-  -p 5678:5678 \
-  -e ENABLE_HANGUP=false \
-  -e ENABLE_WEB_TTYD=false \
-  -e ENABLE_WEB_PANEL=true \
-  -e ENABLE_TG_BOT=true \
-  --name jd \
-  --hostname jd \
-  --restart always \
-  annyooo/jd:v4_bot_arm64
+    docker run -dit \
+      -v /mnt/mmcblk2p4/jd/config:/jd/config \
+      -v /mnt/mmcblk2p4/jd/log:/jd/log \
+      -v /mnt/mmcblk2p4/jd/own:/jd/own \
+      -v /mnt/mmcblk2p4/jd/diy:/jd/jbot/diy \
+      -v /mnt/mmcblk2p4/jd/scripts:/jd/scripts \
+      -p 5678:5678 \
+      -e ENABLE_HANGUP=false \
+      -e ENABLE_WEB_TTYD=false \
+      -e ENABLE_WEB_PANEL=true \
+      -e ENABLE_TG_BOT=true \
+      --name jd \
+      --hostname jd \
+      --restart always \
+      annyooo/jd:v4_bot_arm64
 
 
 
