@@ -12,4 +12,4 @@ cd panel
 pm2 start server.js
 ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
 echo -e "请访问 http://<ip>:5678，如果你做了映射，请使用实际映射的端口进行访问。
-默认用户名admin，密码adminadmin。"
+默认用户名admin，密码admin。"
